@@ -86,6 +86,7 @@ function global_settings_context_default_contexts() {
           'weight' => '-9',
         ),
       ),
+      'layout' => 'default_inner',
     ),
   );
   $context->condition_mode = 1;
