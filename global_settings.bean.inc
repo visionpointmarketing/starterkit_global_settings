@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * global_settings.bean.inc
+ */
+
+/**
+ * Implements hook_bean_admin_ui_types().
+ */
+function global_settings_bean_admin_ui_types() {
+  $export = array();
+
+  $bean_type = new stdClass();
+  $bean_type->disabled = FALSE; /* Edit this to true to make a default bean_type disabled initially */
+  $bean_type->api_version = 5;
+  $bean_type->name = 'basic_wyswiyg_block';
+  $bean_type->label = 'Basic Wyswiyg Block';
+  $bean_type->options = '';
+  $bean_type->description = '';
+  $export['basic_wyswiyg_block'] = $bean_type;
+
+  return $export;
+}
